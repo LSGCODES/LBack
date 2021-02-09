@@ -1,0 +1,7 @@
+name: LBack
+author: LSG
+version: 0.5
+main: com.Main
+commands:
+  back:
+    aliases: ["voltar"]
