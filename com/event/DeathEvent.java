@@ -9,8 +9,8 @@ import org.bukkit.event.entity.PlayerDeathEvent;
 public class DeathEvent implements Listener {
 
     @EventHandler
-    void onBack(PlayerDeathEvent e) {
-        Player p = e.getEntity().getPlayer();
+    void onBack(PlayerDeathEvent event) {
+        Player p = event.getEntity().getPlayer();
         if(!Main.instance.back.containsKey(p)) {
             Main.instance.back.put(p, p.getLocation());
 
